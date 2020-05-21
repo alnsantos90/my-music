@@ -1,2 +1,3 @@
-# my-music
-layout website MyMusic
+# My Music
+
+Projeto de website de musica com estilo bem moderno.
