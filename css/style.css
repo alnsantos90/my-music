@@ -94,17 +94,17 @@ body {
 
 .grid-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 .grid-albums {
-  width: 192px;
-  margin: 0 5px 57px;
+  width: 240px;
+  margin: 0 20px 57px;
 }
 
 .cover-album {
-  width: 192px;
+  width: 100%;
 }
 
 .cover-album img {
@@ -218,7 +218,8 @@ body {
   background: red;
 }
 
-.music h3, p {
+.music h3,
+p {
   margin: 0;
   align-self: center;
 }
@@ -247,3 +248,4 @@ body {
   color: #FFFFFF;
   opacity: 0.6;
 }
+
