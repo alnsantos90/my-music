@@ -1,3 +1,9 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   list-style: none;
   margin: 0;
@@ -6,14 +12,19 @@ body {
   background: #E5E5E5;
   font-family: 'Roboto', sans-serif;
   /* overflow-x: hidden; */
-  padding: 10px 0px 10px 10px;
+}
+
+.hide {
+  display: none;
 }
 
 #root {
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 32%;
   z-index: -2;
-
+  width: 100%;
+  padding: 20px;
 }
 
 #intro {
@@ -21,6 +32,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 22px;
+  z-index: 1;
 }
 
 .container {
@@ -101,6 +113,16 @@ body {
 .grid-albums {
   width: 240px;
   margin: 0 20px 57px;
+  cursor: pointer;
+}
+
+.grid-albums:hover .cover-album {
+  box-shadow: 0px 4px 28px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+.grid-albums:hover h3, .grid-albums:hover p  {
+  color: rgb(36, 87, 226);
+  text-decoration: underline;
 }
 
 .cover-album {
@@ -130,13 +152,13 @@ body {
 
 
 #player-music {
-  background-image: url('../img/bg-right.png');
+  background-image: url(../img/bg-right.png);
   background-size: cover;
-  z-index: -1;
+  z-index: 0;
   background-repeat: no-repeat;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
-  width: 102%;
+  width: calc(100% + 25px);
   height: 100%;
   position: relative;
   right: 25px;
@@ -210,12 +232,71 @@ body {
   display: grid;
   grid-template-columns: 1fr 30% 10%;
   justify-content: center;
-  margin: 20px 0;
+  margin: 12px 0;
   cursor: pointer;
+  transition: all 0.7s;
+  padding: 5px;
+}
+
+.music.active {
+  background: #00000033;
+  border-radius: 8px;
+}
+
+.music.active:hover {
+  background: #00000022;
+  border-radius: 8px;
+}
+
+.music.active:hover h3, .music.active:hover p {
+  color: white;
+}
+
+.music.active:hover h3::before {
+  font-family: "Font Awesome 5 Free";
+  margin: 0 3px ;
+  color: #FFCD06;
+  font-weight: 900;
+  content: "\f58f";
+  position: relative;
+  right: 6px;
+}
+
+.music.active h3 small {
+  display: none;
+}
+
+.music.active h3::before {
+  font-family: "Font Awesome 5 Free";
+  margin: 0 3px ;
+  color: #FFCD06;
+  font-weight: 900;
+  content: "\f58f";
+  position: relative;
+  right: 6px;
 }
 
 .music:hover {
-  background: red;
+  background: white;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.music:hover h3 {
+  color: #000;
+}
+
+.music:hover h3::before {
+  font-family: "Font Awesome 5 Free";
+  margin: 0 5px ;
+  color: #FFCD06;
+  font-weight: 900;
+  content: "\f04b";
+}
+
+.music:hover p {
+  color: #444;
 }
 
 .music h3,
@@ -248,4 +329,3 @@ p {
   color: #FFFFFF;
   opacity: 0.6;
 }
-
