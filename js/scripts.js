@@ -19,8 +19,6 @@ elMusic.forEach( (music, index) => {
     const active = document.querySelector(".active")
     active.classList.remove("active")
     music.classList.toggle("active")
-
-    console.log(item);
   })
 
 })

@@ -1,0 +1,13 @@
+@media screen and (max-width: 767px) {
+  #root {
+    grid-template-columns: 1fr;
+  }
+
+  .brand h3 {
+    margin: 0;
+  }
+
+  .grid-music {
+    text-align: center;
+  }
+}
