@@ -1,12 +1,3 @@
-@media screen and (max-width:600px) {
-  .container {
-    padding: 10px;
-  }
-
-  #root {
-    padding: 10px 15px;
-  }
-}
 
 @media screen and (max-width: 900px) {
   #root {
@@ -89,5 +80,40 @@
     width: 190px;
     margin: 0 20px 57px;
     cursor: pointer;
+  }
+}
+
+
+@media screen and (max-width:520px) {
+  #root {
+    padding: 0px;
+  }
+
+  #intro {
+    border-radius: 0px;
+  }
+
+  .search-avatar input {
+    width: 200px;
+  }
+
+  #player-music {
+    background-repeat: no-repeat;
+    border-radius: 0px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    right: 0px;
+  }
+
+  .player-container {
+    margin: 0 auto;
+    padding: 25px;
+    z-index: 3;
+  }
+
+  .music h3 {
+    font-size: 18px;
   }
 }
