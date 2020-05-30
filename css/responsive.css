@@ -147,6 +147,15 @@
     font-size: 14px;
   }
 
+  .music {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .music.active {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
   .music h3 {
     font-size: 14px;
   }
@@ -155,12 +164,19 @@
     font-size: 12px;
   }
 
-  .music small {
-    font-size: 12px;
+  .music p:last-child() {
+    padding-right: 12px;
   }
 
-  .music.active {
-    padding-left: 5px;
+
+  .music.active h3::before {
+    font-family: "Font Awesome 5 Free";
+    margin: 0 5px ;
+    color: #FFCD06;
+    font-weight: 900;
+    content: "\f58f";
+    position: relative;
+    right: 0px;
   }
 
 }
