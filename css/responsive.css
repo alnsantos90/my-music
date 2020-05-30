@@ -93,8 +93,29 @@
     border-radius: 0px;
   }
 
+  .container {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  header {
+    position: fixed;
+    background:white;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+  }
+
+  .brand {
+    padding: 10px;
+  }
+  
+  .search-avatar {
+    padding: 10px;
+  }
+
   .search-avatar input {
-    width: 200px;
+    width: 115px;
   }
 
   #player-music {
@@ -113,7 +134,33 @@
     z-index: 3;
   }
 
-  .music h3 {
-    font-size: 18px;
+  .current-play .content h3 {
+    font-size: 22px;
+    line-height: 32px;
   }
+
+  .current-play .content p {
+    font-size: 16px;
+  }
+
+  .current-play .content small {
+    font-size: 14px;
+  }
+
+  .music h3 {
+    font-size: 14px;
+  }
+
+  .music p {
+    font-size: 12px;
+  }
+
+  .music small {
+    font-size: 12px;
+  }
+
+  .music.active {
+    padding-left: 5px;
+  }
+
 }
