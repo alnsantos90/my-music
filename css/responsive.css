@@ -164,11 +164,6 @@
     font-size: 12px;
   }
 
-  .music p:last-child() {
-    padding-right: 12px;
-  }
-
-
   .music.active h3::before {
     font-family: "Font Awesome 5 Free";
     margin: 0 5px ;
