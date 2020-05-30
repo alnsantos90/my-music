@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
   #root {
     grid-template-columns: 1fr;
   }
@@ -48,12 +48,7 @@
   }
 
   .music {
-    display: grid;
-    grid-template-columns: 1fr 30% 10%;
-    justify-content: center;
     margin: 20px 0;
-    cursor: pointer;
-    transition: all 0.7s;
     padding: 15px 5px;
   }
 
@@ -63,21 +58,26 @@
 
   .music small {
     font-size: 16px;
-    line-height: 19px;
   }
   
   .music h3 {
-    font-weight: normal;
     font-size: 20px;
-    line-height: 19px;
-    color: #fff;
   }
   
   .music p {
-    font-weight: normal;
     font-size: 18px;
-    line-height: 19px;
-    color: #FFFFFF;
-    opacity: 0.6;
+  }
+}
+
+
+@media screen and (min-width: 901px) and (max-width: 1099px) {
+  #root {
+    grid-template-columns: 1fr 40%;
+  }
+
+  .grid-albums {
+    width: 190px;
+    margin: 0 20px 57px;
+    cursor: pointer;
   }
 }
